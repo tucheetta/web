@@ -59,7 +59,7 @@ footer > p{
 
 @media (max-device-width: 768px) {
 	html {
-	    background: url("../images/hs2.png") no-repeat center center fixed;
+	    background: url("https://i.ibb.co/HnfkZ5V/IMG-7129.jpg") no-repeat center center fixed;
 	    -webkit-background-size: cover;
 	    -moz-background-size: cover;
 	    -o-background-size: cover;
@@ -67,5 +67,14 @@ footer > p{
 	    height: 100%;
 	    overflow: hidden;
 	}
+
+    .navigation{
+        text-align: left;
+        font-size: 50pt;
+        padding: 50px 0 50px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 8em
+    }
 }
 
