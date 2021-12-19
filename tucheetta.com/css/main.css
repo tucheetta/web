@@ -1,0 +1,60 @@
+html{
+	overflow-y: hidden;
+	height: 100vh;
+	background: black; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.navigation{
+    text-align: center;
+    font-size: 50pt;
+    padding: 50px 0 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em
+}
+
+.footer{
+	position: absolute;
+	color: white;
+	clear: both;
+	right: 0;
+	bottom: 0;
+	padding-right: 10px;
+	height: 40px;
+    font-size: 40pt;
+    overflow: hidden;
+
+}
+
+footer > p{
+	font-size: 40pt;
+}
+
+/*Link Behavior*/
+    a:link {
+        text-decoration: none;
+        color: white;
+    }
+    
+    a:visited {
+        text-decoration: none;
+        color: white;
+    }
+    
+    a:hover {
+        text-decoration: none;
+        color: green;
+    }
+    
+    .nav-links{
+        font-size: 34pt;
+        letter-spacing: 2px;
+    
+    }
+
+
