@@ -1,79 +1,143 @@
-html{
-	overflow-y: hidden;
-	height: 100vh;
-	background: black url("https://i.ibb.co/HnfkZ5V/IMG-7129.jpg") no-repeat center center fixed; 
+body, *, a{
+    cursor: url(../images/neptune-cursor.png), auto;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+	overflow-x: hidden;
+	/* height: 100vh; */
+	background: rgb(62, 10, 182) url("https://i.ibb.co/HnfkZ5V/IMG-7129.jpg") no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
     font-family: 'Permanent Marker', cursive;
+    margin: 0;
+    padding: 0;
 }
 
-.navigation{
+.header{
+    /* object-position: 50% 50%; */
+    max-width:40%;
+    margin: auto;
+    display: block;
+}
+
+.nav-bar{
+    width:80%;
+    margin: auto;
+    background-color: black;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px; 
+    -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 50px 26px #000000; 
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 50px 26px #000000;   
     text-align: center;
-    font-size: 50pt;
-    padding: 50px 0 50px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 8em
 }
 
-.footer{
-	position: absolute;
+.nav-links{
+    margin: 0;
+    font-size: 50pt;
+    /* letter-spacing: 2px; */
+    /* vertical-align: middle; */
+    padding: 1rem;
+    text-shadow: 5px 4px 2px #0053FF;    
+    /* display: flex;    */
+    
+}
+
+#header-link:hover{
+    filter: invert(100%);
+}
+
+.footer p{
+	position: fixed;
 	color: white;
-	clear: both;
 	right: 0;
 	bottom: 0;
-	padding-right: 20px;
-    font-size: 20pt;
-    overflow: hidden;
-
-}
-
-footer > p{
-	font-size: 40pt;
+	padding-right: 10px;
+    font-size: 15pt;
+    clear: both;
+    background-color: black;
 }
 
 /*Link Behavior*/
     a:link {
         text-decoration: none;
-        color: white;
+        color: rgb(0, 54, 8);
+        
     }
     
     a:visited {
         text-decoration: none;
-        color: white;
+        color:rgb(0, 54, 8);
     }
     
     a:hover {
         text-decoration: none;
-        color: green;
-    }
-    
-    .nav-links{
-        font-size: 34pt;
-        letter-spacing: 2px;
-    
+        color: rgb(0, 83, 255);
+        text-shadow: 5px 4px 2px #003608;
     }
 
+    
+
+    .container {
+        position: absolute;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 56.25%; 
+        /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+      }
+      
+      /* Then style the iframe to fit in the container div with full height and width */
+      .responsive-iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 90%;
+        height: 90%;
+        padding-top: 40px;
+        padding-bottom: 50px;
+        margin: auto;
+      }
+
 @media (max-device-width: 768px) {
-	html {
-	    background: url("https://i.ibb.co/HnfkZ5V/IMG-7129.jpg") no-repeat center center fixed;
+
+
+    html {
+	    background: rgb(62, 10, 182) url("https://i.ibb.co/HnfkZ5V/IMG-7129.jpg") no-repeat center center fixed;
 	    -webkit-background-size: cover;
 	    -moz-background-size: cover;
 	    -o-background-size: cover;
 	    background-size: cover;
-	    height: 100%;
-	    overflow: hidden;
+        
 	}
 
-    .navigation{
-        text-align: left;
-        font-size: 50pt;
-        padding: 50px 0 50px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 8em
+
+    .nav-links{
+        font-size: 40pt;
     }
+
+    .header{
+        max-width: 85%;
+    }
+
+    iframe{
+        display:none;
+    }
+
+
 }
+
+
+
+
+
+
 
